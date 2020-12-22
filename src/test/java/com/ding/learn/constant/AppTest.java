@@ -1,4 +1,4 @@
-package com.ding.learn.HelloSpringBoot;
+package com.ding.learn.constant;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

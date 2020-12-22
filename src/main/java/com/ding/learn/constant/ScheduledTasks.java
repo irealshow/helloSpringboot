@@ -1,4 +1,4 @@
-package com.ding.learn.HelloSpringBoot;
+package com.ding.learn.constant;
 
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
