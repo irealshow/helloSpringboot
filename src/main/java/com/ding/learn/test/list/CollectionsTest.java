@@ -2,6 +2,7 @@ package com.ding.learn.test.list;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 public class CollectionsTest {
@@ -14,10 +15,10 @@ public class CollectionsTest {
 
         List<String> list1 = new ArrayList<>();
         list1.add("1");
-        list1.add("2");
+        list1.add("23");
         list1.add("3");
-        list1.add("4");
-        list1.add("3");
+        list1.add("433");
+        list1.add("33");
 
         List<String> list2 = new ArrayList<>();
         list2.add("2");
@@ -54,6 +55,10 @@ public class CollectionsTest {
         System.out.println("---得到去重并集 listAllDistinct---");
         listAllDistinct.parallelStream().forEachOrdered(System.out::println);*/
 
+        System.out.println(list1.parallelStream().map(n->n.concat("m")).collect(Collectors.toList()));
+
+        Map<Integer, List<String>> peopleByCity = list1.stream().collect(Collectors.groupingBy(String::length));
+        System.out.println(peopleByCity);
     }
 
 }

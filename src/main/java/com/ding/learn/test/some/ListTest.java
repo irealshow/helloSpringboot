@@ -1,7 +1,7 @@
 package com.ding.learn.test.some;
 
 
-import com.ding.test.dto.Student;
+import com.ding.learn.test.dto.Student;
 
 import java.util.*;
 import java.util.stream.Collectors;

@@ -1,6 +1,6 @@
 package com.ding.learn.test.some;
 
-import com.ding.test.dto.Student;
+import com.ding.learn.test.dto.Student;
 
 import java.util.Arrays;
 import java.util.List;
