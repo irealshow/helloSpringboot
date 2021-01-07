@@ -35,6 +35,7 @@ public class ListStreamTest {
 		
 		
 		List<String>strings2 = Arrays.asList("abc", "", "bc", "efg", "abcd","", "jkl");
+
 		List<String> filtered2 = strings2.stream().filter(string -> !string.isEmpty()).collect(Collectors.toList());
 		System.out.println("筛选列表: " + filtered2);
 		String mergedString = strings.stream().filter(string -> !string.isEmpty()).collect(Collectors.joining(", "));

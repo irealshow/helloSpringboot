@@ -10,7 +10,7 @@ import java.util.stream.Stream;
 
 public class StreamTest {
 
-    public static void main(String[] args) {
+    public static void main1(String[] args) {
         List<Integer> list = new ArrayList<Integer>();
         IntStream.range(0,9).forEach(n->list.add(n));
         System.out.println(list);
@@ -29,5 +29,14 @@ public class StreamTest {
                   });
               }
         );
+    }
+
+    public static void main(String[] args) {
+        IntStream.range(0,3).forEach(n-> {
+            if(n == 0) {
+                throw new RuntimeException("异常");
+            }
+            System.out.println(n);
+        });
     }
 }

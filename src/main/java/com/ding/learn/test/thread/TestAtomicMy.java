@@ -1,7 +1,5 @@
 package com.ding.test.thread;
 
-import java.util.concurrent.atomic.AtomicInteger;
-
 public class TestAtomicMy {
     public volatile int inc = 0;
 
