@@ -12,5 +12,6 @@ public class NullTest {
 //		if(stu.getName().equals("wew")) {
 //			System.out.println("1212");
 //		}
+		System.out.println("test git");
 	}
 }
