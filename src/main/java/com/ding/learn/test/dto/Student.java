@@ -1,13 +1,18 @@
 package com.ding.learn.test.dto;
 
+import lombok.Data;
+
+import java.util.Date;
 import java.util.Objects;
 
+@Data
 public class Student {
 	private Integer id;
 	private String name;
 	private String sex;
 	private Long age;
 	private int intage;
+	private Date createTime;
 	
 	public Integer getId() {
 		return id;
@@ -34,14 +39,14 @@ public class Student {
 	}
 	public Student(Integer id, String name, String sex) {
 		super();
-		this.id = id;
+//		this.id = id;
 		this.name = name;
 		this.sex = sex;
 	}
-	@Override
+	/*@Override
 	public String toString() {
 		return "Student [id=" + id + ", name=" + name + ", sex=" + sex + "]";
-	}
+	}*/
 	public Long getAge() {
 		return age;
 	}
