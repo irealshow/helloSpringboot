@@ -1,5 +1,7 @@
 package com.ding.learn.test.dto;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
 import java.util.Date;
@@ -10,6 +12,8 @@ public class Student {
 	private Integer id;
 	private String name;
 	private String sex;
+	@JsonProperty
+	private String kCode;
 	private Long age;
 	private int intage;
 	private Date createTime;

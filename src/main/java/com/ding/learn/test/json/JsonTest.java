@@ -14,10 +14,16 @@ import java.util.Date;
 @Slf4j
 public class JsonTest {
     public static void main(String[] args) {
+        test1();
+//        test2();
+    }
+
+    private static void test1() {
         JSONObject jsonObj = new JSONObject();
 
         jsonObj.put("sex", "男");
         jsonObj.put("name","张三");
+        jsonObj.put("kcode","K1234");
         jsonObj.put("create_Time",1599554195000L);
         System.out.println(jsonObj);
         Student stu = JSONObject.parseObject(jsonObj.toJSONString(), Student.class);
@@ -25,7 +31,7 @@ public class JsonTest {
         System.out.println(stu);
     }
 
-    public static void main1(String[] args) {
+    private static void test2() {
         Student stu = new Student();
         stu.setName("zhangsan");
         stu.setCreateTime(new Date());
