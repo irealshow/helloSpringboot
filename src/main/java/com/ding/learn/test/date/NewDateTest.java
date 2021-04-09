@@ -21,7 +21,8 @@ public class NewDateTest {
         LocalDateTime localDateTime = LocalDateTime.now();
         System.out.println(localDateTime.minusDays(1).with(LocalTime.MIN).format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")));
         System.out.println(localDateTime.minusDays(1).with(LocalTime.MAX).format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")));
-
+        LocalDate date = LocalDate.parse("2021-03-01", DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+        System.out.println(date.toString());
     }
 
     private static void test4() {

@@ -1,4 +1,4 @@
-package cn.yto.customersetward.app.request;
+package com.ding.learn.test.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
@@ -12,7 +12,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 @Data
-public class BaseRuquest  implements Serializable {
+public class BaseRuquest implements Serializable {
 
     //加密请求字段
     private String encryptText;

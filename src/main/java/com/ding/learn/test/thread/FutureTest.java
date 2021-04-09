@@ -10,7 +10,7 @@ public class FutureTest {
 	public static void main(String[] args) {
 		try {
 			functionTimeoutTest2();
-		} catch (Exception e) {
+        } catch (Exception e) {
 			// TODO Auto-generated catch block
 			System.out.println("1211");
 			e.printStackTrace();

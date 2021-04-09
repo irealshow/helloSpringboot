@@ -1,13 +1,12 @@
-package cn.yto.customersetward.app.request;
+package com.ding.learn.test.dto;
 
 import lombok.Data;
 
-import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.List;
 
 @Data
-public class AutoRechargeAModeRequest  extends BaseRuquest  {
+public class AutoRechargeAModeRequest extends BaseRuquest  {
     private String kCode; //客户编码
     private String kCodeName; //客户编码名称
     private Integer totalNum; //总数量
